@@ -1,0 +1,6 @@
+# Member list 검색 처리하기(mybatis로 만들기)
+
+1. sql작성
+2. vo 작성
+3. dao 인터페이스 작성
+4. 공통 mybatis 등록 : alias, mapper,

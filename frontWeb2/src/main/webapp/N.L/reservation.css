@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+.back_image{
+    background-image:url("./nl_image/도트배경.png");
+    background-size: 100% 1500px;
+    background-repeat: no-repeat;
+}
+
+.top_main{
+    background-color:#002157;
+    margin:-8px -7px 10px;
+}
+
+.top1{
+    float: left;
+}
+
+.count_main{
+    color:lightslategray;
+    float : right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.count{
+    color: #ffc000;
+}
+
+.but_all{
+    float: right;
+    margin-top: 10px;
+}
+
+.but_logout{
+    font-size: 18px;
+    color : white;
+    background-color: #e3421e;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+.but_mpi{
+    font-size: 18px;
+    background-color:#8dc63f;
+    border-radius: 30px;
+    text-align: center;
+    width: 140px;
+    height : 35px;
+}
+.but_us{
+    font-size: 18px;
+    background-color: #ffc000;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+.but_cm{
+    font-size: 18px;
+    background-color:#00aeef;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+
+.hi{
+    text-align: center;
+    color:lightslategray;
+}
+.hi:hover{
+    color:white;
+}
+
+.hi2{
+    color: #ffc000;
+}
+
+.main_div{
+    float: left;
+    margin-left: 20%;
+}
+.title{
+    margin: 0.5em 0 0.25em;
+    color: #002157;
+    font-size: 2em;
+}
+.title2{
+    font-size: 20px;
+    color: #666;
+}
+
+.table1{
+    border-top :1px solid #11c1f3;
+    width: 137%;
+    border-collapse: collapse;
+}
+
+.table2{
+    border-bottom: 1px solid #11c1f3;
+    border-collapse: collapse;
+}
+.table2_img{
+    background-color:#fafafa;
+    width: 200px;
+    height: 100px;
+}
+.table3{
+    border-bottom :1px solid #11c1f3;
+    border-collapse: collapse;
+}
+.table3_img{
+    background-color:#fafafa;
+    width: 200px;
+    height: 100px;
+}
+.table4{
+    border-bottom :1px solid #11c1f3;
+    height : 50px;
+}
+.table4_img{
+    background-color:#fafafa;
+    width: 200px;
+    height: 100px;
+}
+
+.sysdate{
+    color: #274d9d;
+    font-weight: 600;
+}
+
+.btu_date{
+    color: #274d9d;
+    background-color: white;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #11c1f3;
+    height: 30px;
+}
+
+.btu_date2{
+    color: white;
+    background-color: #11c1f3;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #11c1f3;
+    height: 30px;
+}
+
+.btu_date:hover{
+    background-color: #b5cbe5;
+    color: black;
+}
+
+.text1{
+    color : #e3421e;
+    font-size: 23px;
+}
+
+.re_btu{
+    margin-top: 20px;
+    width : 130px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    background-color: #002157;
+    color: white;
+    margin-left: 550px;
+}
+
+.img1{
+    width: 137%;
+    border: 1px solid black;
+    margin-top: 30px;
+}
+
+.time{
+    color: #37474f;
+    width : 150px;
+    height: 35px;
+    border: 1px solid rgba(118, 118, 118, 0.3);
+    float: left;
+    
+}
+
+.clock{
+    /* background-color: rgba(118, 118, 118, 0.3); */
+    border: 1px solid rgba(118, 118, 118, 0.3);
+    height: 35px;
+    background-color: rgba(118, 118, 118, 0.3);
+}
+
+.clock_img{
+    margin: -2px -2px -2px;
+}

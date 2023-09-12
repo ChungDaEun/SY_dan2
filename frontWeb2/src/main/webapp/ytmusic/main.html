@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>2조YTMusic_main</title>
+   <style>
+      .cls{color:darkgray;}
+      .cls2{color:darkgray;
+            margin:30px 10px 30px;
+            font-size: 25px;}
+      .cls3{
+         font-size: 30px; 
+         margin-top: 1px; 
+         color: white;
+      }
+      .cls4{
+         float: left; margin-left: 9px; margin-top: 100px;
+      }
+      .cls5{
+         float: right; margin-top: 30px; margin-right: 210px;
+      }
+      .cls6{
+         font-size: 30px; margin-top: 1px; color: white;
+      }
+      .replay{color: white;
+               margin-top: 10px;
+               margin-right: 50px;}
+      .fast{
+         color: darkgray;
+      }
+      .fast2{color: white;
+         float: left;
+         margin-left: 10px;
+         margin-top: 0px;} 
+      .cls7{
+         font-size: 30px; color: white; margin-top: -10px;
+      }   
+      .cls8{
+         float: left; margin-left: 20px; margin-top: -10px;
+      }
+   </style>
+</head>
+<body bgcolor="black"> <!-- 웹 화면 검은색으로 지정 -->
+   <!-- 제일 위 아이콘 및 기본 사항-->
+   <div>
+      <!-- 링크 : 로고를 클릭하면 메인화면으로 이동한다. -->
+      <a href ="./main.html" style = "float:left;"> 
+         <img src ="./ytm_main/로고.png" 
+            width="80px" height="30px"/></a>
+      <!-- 이미지에 링크 삽입 -->
+      <a href ="" style ="float:right; top:20px;">  
+         <img src ="./ytm_main/프로필.png" 
+            width ="30px" height="30px"/></a>
+      <div style="text-align: center;">
+         <!-- 링크 : 홈을 클릭하면 메인화면으로 이동한다. -->
+         <a class="cls2" href ="./main.html">홈</a> 
+         <!-- 링크 -->
+         <a class="cls2" href ="">둘러보기</a>
+         <a class="cls2" href ="">보관함</a>
+         <a class="cls2" href ="">
+            <img src="./ytm_main/돋보기.png"  
+               width="25px"  height="25px"/>검색</a>
+      </div>
+      <hr color="darkgray"> <!-- 선 -->
+   </div>
+
+   <!-- 다시 듣기 -->
+   <div>
+      <!-- 다시 듣기 제목-->
+      <div style="float: left;">
+         <img src ="./ytm_main/프로필.png" width ="60px" height="60px" 
+            style = "margin-left: 150px; margin-top: 150px";/>
+      </div>
+      <div class ="replay" 
+         style="float: left; margin-top: 135px; margin-left: 20px;">
+         <div style="float: right;">
+            <a href=""><img src ="./ytm_main/더보기.png"
+               width="70px" height="40px" style = "margin-top: 50px;"/></a>
+            <img src = "./ytm_main/왼쪽.png"
+               width="40px" height="40px"/>
+            <img src = "./ytm_main/오른쪽.png"
+               width="40px" height="40px" style="margin-right: 50px;"/>
+         </div>
+         <p style="font-size: 15px;">
+            사용자 이름
+            <p style = "font-size: 30px; margin-top: 1px;">다시 듣기</p>
+         </p>
+         <!-- 다시 듣기 내용-->
+         <div>
+            <div style="float: left;">
+               <a class = "replay" href="./PBscreen.html">
+               <!-- 앨범 이미지 클릭하면 해당 링크로 이동-->
+                  <img src = "./ytm_main/앨범1.jpg" 
+                     width="250px" height = "250px"/></a>
+               <p class = "replay">
+                     노래 제목<br>
+                     노래 * <a class = "replay" href ="">가수이름</a>
+               </p>
+            </div>
+            <div style="float: left;">
+               <a  class = "replay" href=""><img src = "./ytm_main/앨범2.jpg" 
+                     width="250px" height = "250px"/></a>
+               <p class = "replay">
+                     노래 제목<br>
+                     노래 * <a class = "replay" href ="">가수이름</a>
+               </p>
+            </div>
+            <div style="float: left;">
+               <a  class = "replay" href=""><img src = "./ytm_main/앨범3.jpg" 
+                     width="250px" height = "250px" /></a>
+               <p class = "replay">
+                     노래 제목<br>
+                     노래 * <a class = "replay" href ="">가수이름</a>
+               </p>
+            </div>
+            <div style="float: left;">
+               <a  class = "replay" href=""><img src = "./ytm_main/앨범4.jpg" 
+                     width="250px" height = "250px" /></a>
+               <p class = "replay">
+                     노래 제목<br>
+                     노래 * <a class = "replay" href ="">가수이름</a>
+               </p>
+            </div>
+            <div style="float: left;">
+               <a  class = "replay" href=""><img src = "./ytm_main/앨범5.jpg" 
+                     width="250px" height = "250px" /></a>
+               <p class = "replay">
+                     노래 제목<br>
+                     노래 * <a class = "replay" href ="">가수이름</a>
+               </p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- 빠른 선곡 부분 -->
+   <!-- 빠른 선곡 부분 제목 -->
+   <div style = "float: left; margin-left: 150px; margin-top: 100px;">
+      <div>
+         <div style="float: right; margin-top: 30px; margin-right: 210px;">
+            <img src = "./ytm_main/왼쪽.png"
+               width="40px" height="40px"/>
+            <img src = "./ytm_main/오른쪽.png"
+               width="40px" height="40px"/>
+         </div>
+         <p style="font-size: 15px; color: darkgray;">
+            이 노래로 뮤직 스테이션 시작하기
+            <p class="cls3">빠른 선곡</p>
+         </p>
+      </div>
+
+      <!-- 빠른 선곡 내용 앨범 첫번째 줄 -->
+      <div style = "float: left;"> 
+         <!-- 첫번째 줄 첫번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left;">
+               <img src ="./ytm_main/앨범1.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 첫번째 줄 두번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범2.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 첫번째 줄 세번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범3.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         
+      </div>
+
+      <!--앨범 두번째 줄 -->
+      <div style = "float: left;"> 
+         <!-- 두번째 줄 첫번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left;">
+               <img src ="./ytm_main/앨범4.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 두번째 줄 두번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범5.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 두번째 줄 세번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범6.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+
+     <!--앨범 세번째 줄 -->
+     <div style = "float: left;"> 
+      <!-- 세번째 줄 첫번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left;">
+            <img src ="./ytm_main/앨범7.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 세번째 줄 두번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범8.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 세번째 줄 세번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범9.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+   </div>
+
+   <!--앨범 네번째 줄 -->
+   <div style = "float: left;"> 
+      <!-- 네번째 줄 첫번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left;">
+            <img src ="./ytm_main/앨범10.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 네번째 줄 두번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범1.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 네번째 줄 세번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범2.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/>
+            </button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <!-- 인기 급상승 곡 -->
+   <div class="cls4">
+      <div>
+         <div class="cls5">
+            <img src = "./ytm_main/왼쪽.png"
+               width="40px" height="40px"/>
+            <img src = "./ytm_main/오른쪽.png"
+               width="40px" height="40px"/>
+         </div>
+         <p style="font-size: 15px; color: darkgray;">
+            나를 위한 추천
+            <p class="cls6">인기 급상승 곡</p>
+         </p>
+      </div>
+
+      <!-- 인기 급상승 곡 내용 앨범 첫번째 줄 -->
+      <div style = "float: left;"> 
+         <!-- 첫번째 줄 첫번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left;">
+               <img src ="./ytm_main/앨범1.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 첫번째 줄 두번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범2.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 첫번째 줄 세번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범3.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+      <!--앨범 두번째 줄 -->
+      <div style = "float: left;"> 
+         <!-- 두번째 줄 첫번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left;">
+               <img src ="./ytm_main/앨범4.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 두번째 줄 두번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범5.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+         <!-- 두번째 줄 세번째 앨범 -->
+         <div style = "float: left;">
+            <a href="" style = "float: left; margin-left: 100px;">
+               <img src ="./ytm_main/앨범6.jpg"
+                          width="50px" height="50px"/>
+            </a> 
+            <p class="fast2">노래제목 <br>
+               <a class ="fast" href="" >가수 이름</a>
+               <a class ="fast" href="">앨범 이름</a>
+            </p>
+            <div style = "float: left; margin-left: 150px;">
+               <button><img src = "./ytm_main/싫어요.png"
+                  width="20px" height="20px"/></button>
+               <button><img src = "./ytm_main/좋아요.png"
+                  width="20px" height="20px"/></button>
+            </div>
+         </div>
+
+     <!--앨범 세번째 줄 -->
+     <div style = "float: left;"> 
+      <!-- 세번째 줄 첫번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left;">
+            <img src ="./ytm_main/앨범7.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 세번째 줄 두번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범8.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>
+      <!-- 세번째 줄 세번째 앨범 -->
+      <div style = "float: left;">
+         <a href="" style = "float: left; margin-left: 100px;">
+            <img src ="./ytm_main/앨범9.jpg"
+                       width="50px" height="50px"/>
+         </a> 
+         <p class="fast2">노래제목 <br>
+            <a class ="fast" href="" >가수 이름</a>
+            <a class ="fast" href="">앨범 이름</a>
+         </p>
+         <div style = "float: left; margin-left: 150px;">
+            <button><img src = "./ytm_main/싫어요.png"
+               width="20px" height="20px"/></button>
+            <button><img src = "./ytm_main/좋아요.png"
+               width="20px" height="20px"/></button>
+         </div>
+      </div>        
+   </div>
+
+   <!-- 아티스트 추천 -->
+   <div style = "float: left; margin-top: 100px;">
+      <div>  <!-- 아티스트 추천 제목 -->
+         <div style="float: right; margin-top: 30px;">
+            <img src = "./ytm_main/왼쪽.png"
+               width="40px" height="40px"/>
+            <img src = "./ytm_main/오른쪽.png"
+               width="40px" height="40px" 
+               style="margin-right: 50px;"/>
+         </div>
+         <a href="" style="float: left;">
+            <img src = "./ytm_main/프로필.png" 
+             width="60px" height="60px"/></a>
+         <div class="cls8">
+            <p style="font-size: 15px; color: darkgray;">
+               아래 아티스트를 좋아한다면
+               <p class="cls7">가수 이름</p>
+            </p>
+         </div>
+      <!-- 아티스트 추천 내용 -->
+      </div>
+      <!-- 첫번째 앨범 -->
+      <div style = "float:left; margin-top: 10px;">
+         <div style="float: left;  margin-right:50px">
+            <a href=""><img src = "./ytm_main/앨범1.jpg" 
+                  width="250px" height = "250px"/></a>
+            <p style="float: center; color: white;">
+                  <a class = "replay" href ="">가수이름</a><br>
+                  구독자 수
+            </p>
+         </div>
+         <div style="float: left;">
+            <a href=""><img src = "./ytm_main/앨범2.jpg" 
+                  width="250px" height = "250px"/></a>
+            <p style="float: center; color: white;">
+                  <a class = "replay" href ="">가수 이름</a><br>
+                  구독자 수
+            </p>
+         </div>
+      </div>
+   </div>
+
+</body>
+</html>

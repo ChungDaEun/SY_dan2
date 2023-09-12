@@ -1,0 +1,7 @@
+INDEX VERSION 1.132+C:\a01_javaexp\workspace_dan2\frontWeb\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1176498247.index
+1505598139.index
+2191378676.index
+4129565241.index
+326687774.index

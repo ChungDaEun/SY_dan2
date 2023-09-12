@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+.back_image{
+    background-image:url("./nl_image/도트배경.png");
+    background-size: 100% 1500px;
+    background-repeat: no-repeat;
+}
+
+.top_main{
+    background-color:#002157;
+    margin:-8px -7px 10px;
+}
+
+.top1{
+    float: left;
+}
+
+.count_main{
+    color:lightslategray;
+    float : right;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.count{
+    color: #ffc000;
+}
+
+.but_all{
+    float: right;
+    margin-top: 10px;
+}
+
+.but_logout{
+    font-size: 18px;
+    color : white;
+    background-color: #e3421e;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+.but_mpi{
+    font-size: 18px;
+    background-color:#8dc63f;
+    border-radius: 30px;
+    text-align: center;
+    width: 140px;
+    height : 35px;
+}
+.but_us{
+    font-size: 18px;
+    background-color: #ffc000;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+.but_cm{
+    font-size: 18px;
+    background-color:#00aeef;
+    border-radius: 30px;
+    text-align: center;
+    width: 100px;
+    height : 35px;
+}
+
+.hi{
+    text-align: center;
+    color:lightslategray;
+}
+.hi:hover{
+    color:white;
+}
+
+.hi2{
+    color: #ffc000;
+}
+
+.main_all{
+    position: absolute;
+    left : 30%;
+}
+
+.main_menu1{
+    border: 1px solid gray; width: 25%;
+    color: white;
+    text-align: center;
+    table-layout: fixed;
+    width: 350px;
+    height : 400px;
+    float: left;
+    background-color:#002157;
+}
+
+.main_menu1:hover{
+    background-color:#001538;
+}
+
+.main_menu1:hover .but_res1{
+    background-color: #00aeef;
+}
+.main_menu1:hover .but_res1:hover{
+    background-color: #ffc000;
+    color : #002157;
+}
+
+
+.main_menu2{
+    border: 1px solid gray; width: 25%;
+    color: white;
+    text-align: center;
+    table-layout: fixed;
+    width: 350px;
+    height : 400px;
+    float: left;
+    background-color:#002157;
+}
+
+.main_menu2:hover{
+    background-color:#001538;
+}
+.main_menu2:hover .but_res2{
+    background-color:#00aeef;
+}
+.main_menu2:hover .but_res2:hover{
+    background-color: #ffc000;
+    color : #002157;
+}
+
+
+.but_res1{
+    font-size: 18px;
+    color : white;
+    background-color: black;
+    border-radius: 30px;
+    width : 270px;
+    height : 40px;
+}
+
+.but_res2{
+    font-size: 18px;
+    color : white;
+    background-color: black;
+    border-radius: 30px;
+    width : 270px;
+    height : 55px;
+}
+
+.det{
+    color:lightslategray;
+    font-size: 15px;
+}

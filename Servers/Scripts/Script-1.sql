@@ -1,0 +1,3 @@
+SELECT * FROM emp02;
+
+SELECT * FROM code;

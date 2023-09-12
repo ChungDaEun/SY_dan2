@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>점수</title>
+   <style>
+      .team-container{
+         width: 49%;
+         height: 450px;
+         float: left;
+         border: 1px solid black;
+      }
+      .team {
+         text-align: center;
+         font-size: 80px;
+         font-weight: bold;
+      }
+      .score {
+         text-align: center;
+         font-size: 80px;
+         font-weight: bold;
+      }
+      .score-button {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100px;
+         float: right;
+      }
+      .plus, .minus {
+         background-color: white;
+         color: black;
+         font-weight: bold;
+         font-size: 80px;
+         width: 100px;
+         height: 100px;
+         cursor: pointer;
+      }
+      .score-button{
+         float:rigth;
+      }
+      .score-button2{
+         float:left;
+      }
+   </style>
+</head>
+<body> 
+   <div class="team-container">
+      <p class="team">3조 - 귀염둥이</p>
+      <div class="score">
+         <div class="score-button" onclick="updateScore('result1', 'plus')">+</div>
+         <div class="score-number" id="result1">0점</div>
+         <div class="score-button2" onclick="updateScore('result1', 'minus')">-</div>
+      </div>
+   </div>
+   <div class="team-container">
+      <p class="team">1조 - F1</p>
+      <div class="score">
+         <div class="score-button" onclick="updateScore('result2', 'plus')">+</div>
+         <div class="score-number" id="result2">0점</div>
+         <div class="score-button2" onclick="updateScore('result2', 'minus')">-</div>
+      </div>
+   </div>
+   <div class="team-container">
+      <p class="team">4조 - 수조</p>
+      <div class="score">
+         <div class="score-button" onclick="updateScore('result3', 'plus')">+</div>
+         <div class="score-number" id="result3">0점</div>
+         <div class="score-button2" onclick="updateScore('result3', 'minus')">-</div>
+      </div>
+   </div>
+   <div class="team-container">
+      <p class="team">2조 - 돈조!</p>
+      <div class="score">
+         <div class="score-button" onclick="updateScore('result4', 'plus')">+</div>
+         <div class="score-number" id="result4">0점</div>
+         <div class="score-button2" onclick="updateScore('result4', 'minus')">-</div>
+      </div>
+   </div>
+</body>
+<script>
+function updateScore(resultId, action) {
+  const resultElement = document.getElementById(resultId);
+  let currentScore = parseInt(resultElement.innerText);
+  
+  if (action === 'plus') {
+    currentScore += 10;
+  } else if (action === 'minus') {
+    currentScore -= 10;
+  }
+
+  resultElement.innerText = currentScore + '점';
+}
+</script>
+</html>

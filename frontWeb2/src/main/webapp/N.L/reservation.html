@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+    <meta charset="UTF-8">
+    <title>디지털열람석</title>
+    <link type="text/css" rel="stylesheet" href="./reservation.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+    <div class = "top_main">
+        <div>            
+            <div class = "top1">
+                <img src = "./nl_image/메뉴.PNG">
+                <a href = "./국중박메인화면">
+                    <img id="logo" src = "nl_image/로고.png" width="250px" height = "50px">
+                </a>
+                <a href = "./re_main.html">
+                    <img src = "nl_image/디지털도서관예약.PNG" width="200px" height = "40px">
+                </a>
+            </div>
+            <div class = "but_all">
+                <button class = "but_logout">로그아웃</button>
+                <button class = "but_mpi">개인정보수정</button>
+                <button class = "but_us">이용현황</button>
+                <button class = "but_cm">모임관리</button>
+            </div>
+            <table class = "count_main">
+                <tr><td>로그아웃까지</td>
+                    <td class = "count" id ="count">300</td>
+                    <td>초</td></tr>
+            </table>
+
+        </div>
+        <div> <br><br> </div>
+        <div class="hi">
+            <h1><span class = "hi2">@@@</span>님 안녕하세요. 예약정보가
+                <span class = "hi2">0</span>건 있습니다.
+            </h1>
+            <hr style = "border-color: gray;">
+        </div>
+    </div>
+    <div class = "main_div">
+        <h1 class = "title">디지털 열람석
+            <span class = "title2">국내외 각종 디지털 자료를 PC를 통해 검색▪열람▪출력할 수 있습니다.</span>
+        </h1>
+        <table class = "table1">
+            <tr class = "table2">
+                <td class = "table2_img"> <img src = "nl_image/예약일자.PNG"></td>
+                <td>
+                    현재 : <span class = "sysdate">YYYY-MM-DD D요일 HH:DD</span> <br>
+                    <button class = "btu_date">06-07 수</button>
+                    <button class = "btu_date2">06-08 목</button>
+                    <button class = "btu_date">06-09 금</button>
+                    <button class = "btu_date">06-10 토</button>
+                    <button class = "btu_date">06-11 일</button>
+                </td>
+            </tr>
+            <tr class = "table3">
+                <td class = "table3_img"> <img class = "tb_img" src = "nl_image/예약시간.PNG"></td>
+                <td><p>예약가능한 시간이 없습니다.</p>
+<!--                    <table>
+                       <tr> <td class = "time">HH:MM</td>
+                            <td class = "clock"><img class = "clock_img" src = "nl_image/시계.PNG"></td> </tr>
+  
+                    </table>
+-->  
+                </td>
+            </tr>
+            <tr class = "table4">
+                <td class = "table4_img"> <img class = "tb_img" src = "nl_image/예약좌석.PNG"></td>
+                <td>
+                    <table>
+                        <tr><td class = "text1">예약할 좌석을 선택해 주세요.</td>
+                            <td><img src = "nl_image/좌석설명.PNG"></td></tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <button class = "re_btu">예약</button>
+        </div>
+        <div>
+            <img class = "img1" src = "nl_image/좌석배치.png">
+        </div>
+    </div>
+</body>
+<script>
+    // 카운트 다운
+    let countBox = document.querySelector('#count'),
+    count = 300;
+    var link =  "logout.html";
+    let counting = setInterval(function () {
+        if (count == 0) {
+            clearInterval(counting);
+            alert("로그아웃 되었습니다.")
+            // window.location.href = link;
+        }
+        count -= 1;
+        countBox.innerHTML = new Intl.NumberFormat().format(count);
+    }, 1000);
+</script>
+</html>
